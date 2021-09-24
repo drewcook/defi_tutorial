@@ -50,7 +50,8 @@ contract TokenFarm {
 		for (uint i = 0; i < stakers.length; i++) {
 			address recipient = stakers[i];
 			uint balance = stakingBalance[recipient];
-			// issue out 1 Dapp Token per mDAI staked - 1:1
+			// issue out 1 Dapp Token per mDAI staked
+			// TODO: we could update this to be a fraction of what is staked instead of 1:1
 			if (balance > 0) dappToken.transfer(recipient, balance);
 		}
 	}
