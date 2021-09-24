@@ -26,7 +26,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prettier:solidity": "./node_modules/.bin/prettier --write ./src/contracts/**/*.sol",
+    "prettier:check:solidity": "./node_modules/.bin/prettier --check ./src/contracts/**/*.sol",
+    "solhint": "./node_modules/.bin/solhint -f table ./src/contracts/**/*.sol"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,5 +39,13 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "altheajs-prettier-config": "^1.2.0",
+    "prettier": "^2.4.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.18",
+    "solhint": "^3.3.6",
+    "solhint-plugin-prettier": "^0.0.5"
+  },
+  "prettier": "altheajs-prettier-config"
 }
