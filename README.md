@@ -23,3 +23,7 @@ This is a decentralized yield farm built on the Ethereum blockchain.  The applic
 ## Photos
 
 ![Defi Yield Farm](./src/screengrab.png)
+
+<p align="center">
+ <img src="https://visitor-badge.glitch.me/badge?page_id=drewcook.defi_yield_farm" alt="visitor count"/>
+</p>
